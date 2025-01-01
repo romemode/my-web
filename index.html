@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yide Lin - 个人网站</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="assets/avatar.jpg" alt="头像" class="avatar">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/blog.html">Blog</a>
+            <a href="pages/project.html">Project</a>
+            <a href="pages/message.html">Message</a>
+        </div>
+        <div class="nav-social">
+            <a href="https://github.com/yourusername" target="_blank" class="github-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <div class="login-avatar" id="loginButton">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 登录弹窗 -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Welcome Back</h2>
+            <p class="modal-subtitle">Sign in to yidelin.me</p>
+            
+            <div class="login-buttons">
+                <button class="login-btn github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </button>
+                <button class="login-btn google">
+                    <i class="fab fa-google"></i>
+                    <span>Google</span>
+                </button>
+            </div>
+            
+            <div class="signup-prompt">
+                <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+            </div>
+            
+            <div class="secured-by">
+                <p>Secured by <img src="assets/clerk.svg" alt="Clerk" class="clerk-logo"></p>
+            </div>
+        </div>
+    </div>
+
+    <main class="home-content">
+        <div class="typewriter"></div>
+        <div class="subtitle">Every day is a second chance</div>
+        <div class="subtitle-cn">每一天都是新的开始</div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
